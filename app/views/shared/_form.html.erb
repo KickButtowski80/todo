@@ -15,9 +15,15 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </div>
+  <!--<div class="field">-->
+  <!--  <%= f.label :completed %><br />-->
+  <!--  <%= f.check_box :completed %>-->
+  <!--</div>-->
   <div class="field">
-    <%= f.label :completed %><br />
-    <%= f.check_box :completed %>
+    <%= f.label :status %><br />
+    <%#= f.text_field :status %>
+    <%= f.collection_radio_buttons :status, [[:low, 'Low'] ,[:medium, 'Medium'],[:high, 'High'],[:urgent, 'Urgent']], :first, :last %>
+  
   </div>
   <div class="actions">
     <%= f.submit %>
