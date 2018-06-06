@@ -8,7 +8,7 @@
         <th>Status</th>
     </tr>
     <% @lists.each do |list| %>
-    <tr class="<%=  completed?(list)%>">
+    <tr class="<%= completed?(list)%>">
         <%= render 'shared/actions_each_todo_item', list: list%>
     </tr>
         
