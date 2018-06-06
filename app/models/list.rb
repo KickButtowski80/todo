@@ -1,3 +1,3 @@
 class List < ApplicationRecord
-    enum status: {low: 0, medium: 1, high: 2, urget: 3}
+    enum status: {low: 0, medium: 1, high: 2, urgent: 3}
 end
