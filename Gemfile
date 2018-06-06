@@ -65,4 +65,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-gem 'rubocop', '~> 0.39.0'
+gem 'rubocop' 
+
+gem 'bootstrap', '~> 4.1', '>= 4.1.1'
+gem 'jquery-rails'
+gem "font-awesome-rails"
