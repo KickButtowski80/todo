@@ -6,7 +6,7 @@ module ApplicationHelper
         elsif list.status == 'low'
             'table-light'
         elsif list.status == 'medium'
-            'table-sucess'
+            'table-success'
         elsif list.status == 'high'
             'table-warning'
         elsif list.status == 'urgent'
