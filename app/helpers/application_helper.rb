@@ -4,9 +4,9 @@ module ApplicationHelper
         if list.completed           
             'table-dark'
         elsif list.status == 'low'
-            'table-secondary'
+            'table-light'
         elsif list.status == 'medium'
-            'table-primary'
+            'table-sucess'
         elsif list.status == 'high'
             'table-warning'
         elsif list.status == 'urgent'
