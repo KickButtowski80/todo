@@ -4,11 +4,11 @@
      <%#= link_to "Mark as Complete", complete_list_path(list, list.id), method: :patch %> 
      <% unless list.completed? %> 
        <%= link_to complete_list_path(list, list.id), method: :patch do %>
-          Mark as Complete<%= fa_icon 'square', style: 'opacity: 0.4;' %>
+          <%= fa_icon 'square', style: 'opacity: 0.4;' %>Mark as Complete
         <%end%>
      <%else%>
         <%= link_to complete_list_path(list, list.id), method: :patch do %>
-          Marked as Finish<%= fa_icon 'check', style: 'opacity: 0.4;' %>     
+          <%= fa_icon 'check', style: 'opacity: 0.4;' %>Marked as Finish     
        <%end%>
      <%end%>
   </div>
