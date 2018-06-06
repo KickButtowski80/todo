@@ -13,4 +13,8 @@ module ApplicationHelper
             'table-danger'
         end        
     end
+    
+    def complete_status(list)
+        list.completed ? "complete" : "un-complete"
+    end
 end
